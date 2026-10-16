@@ -1,30 +1,26 @@
-# Wildfire
+# Cluster of Fire
 
-Clustering historical wildfire location data.
-
-Project for CS 210 students, University of Oregon. 
-Instructions for students in
-[docs/HOWTO.md](docs/HOWTO.md).
+A Python project that uses k-means clustering to group historical wildfire locations on a map.
+I built this for CS 210 at the University of Oregon.
 
 ![History of wildfires in Oregon, clustered](docs/img/screenshot.jpg)
 
-Learning objectives: 
+## Wat it does
 
-- Successive approximation as a fundamental algorithmic technique
-- k-means clustering as an example of successive approximation
-- Parallel array structures (lists with matching indexes)
-- Incremental construction of an application with complex data 
-  structures, with testing on small example data sets
+- Reads in wildfire location data
+- Groups the fires into clusters using k-means
+- Draws the clusters on a map so you can see where the hot spots are
+
+## What I Learned
+- Successive approximation: k-means keeps refining its guess until the clusters stop changing,and this was the first time I used that idea in a real program
+- Parallel array: I stored the data in lists that line up by index
+- Building in small steps: I tests on tiny data sets first, then scaled up to the full data
+
+## Credits
 
 This project incorporates a fork of John Zelle's `graphics.py` 
 module, which carries a GPL license, so this project is necessarily 
-also covered by GPL.  I will substitute CC-by-SA when and if I
-produce a "cleanroom" implementation of the needed functionality 
-from `graphics.py`.  
+also covered by GPL. 
 
-See data/README.md for some notes on substituting 
-different data sets and basemaps.  This project is used at 
-University of Oregon in a CS-1 class (CS 210 at UO, equivalent to CS 
-161 at other Oregon colleges and universities), approximately four 
-weeks into the academic term. 
+
 
